@@ -1,6 +1,7 @@
 package collection;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -20,11 +21,13 @@ public class ExercicioUmCollectionSet {
 		}
 		
 		
-		System.out.println(setNumeros);
+		Iterator<Integer> isetNumeros = setNumeros.iterator();
 		
-		
+		while(isetNumeros.hasNext()) {
+			System.out.println("Listar dados do Set" + isetNumeros.next());
+		}
+
 		sc.close();
-		
 		
 	}
 

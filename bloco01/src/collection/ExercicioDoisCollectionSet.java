@@ -10,7 +10,6 @@ public class ExercicioDoisCollectionSet {
 
 		Scanner sc = new Scanner(System.in);
 		
-		
 		Integer numeroDigitado;
 		
 		Set<Integer> setInteiros = new HashSet<Integer>();
@@ -29,9 +28,7 @@ public class ExercicioDoisCollectionSet {
 		System.out.println("Digite um número: ");
 		numeroDigitado = sc.nextInt();
 		
-		
 		if (setInteiros.contains(numeroDigitado) == true) {
-		
 		
 		System.out.println ("O número " + numeroDigitado + " foi encontrado! " );
 
@@ -39,21 +36,6 @@ public class ExercicioDoisCollectionSet {
 			System.out.println ("O número " + numeroDigitado + " não foi encontrado! " );
 
 		}
-
-
-
-
-
-
-
-
-
-
-		
-		
-		
-		
 	}
 
-	
 }
