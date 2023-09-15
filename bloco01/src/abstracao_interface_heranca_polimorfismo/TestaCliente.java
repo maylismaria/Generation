@@ -1,10 +1,12 @@
 package abstracao_interface_heranca_polimorfismo;
 
+import java.util.Scanner;
 
 public class TestaCliente {
 
 	public static void main(String[] args) {
 
+		Scanner sc = new Scanner (System.in);
 		
         Cliente Cliente1 = new Cliente ("Jose da Silva", "Rua alba", "(11) 934467068", 32, "023.456.787-00"  );
 		System.out.println("Cliente 1:");
@@ -28,9 +30,7 @@ public class TestaCliente {
 		Cliente Cliente4 = new Cliente("floriano peixoto", "Rua 25 de março", "(31) 97839308", 55, "98.655.876/0001-80"   );
 		System.out.println("\nCliente 4:");
 		Cliente4.pj();
-	
 		
 		
-	}
-
+		}
 }
