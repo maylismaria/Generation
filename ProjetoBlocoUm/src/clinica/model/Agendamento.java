@@ -21,9 +21,7 @@ public class Agendamento {
 	private int idade;
 	private int tipo;
 	public float taxaConsulta;
-	
-	LocalDate dataAtual = LocalDate.now();
-	
+		
 	
 	public int getNumero() {
 		return senha;
@@ -79,13 +77,10 @@ public void visualizar() {
 		taxaConsulta = 80;
 	break;
 
-
 	}
     
-	    System.out.println("..........................................................");
-		System.out.println("              Dados do agendamento do dia: " + dataAtual);
 		System.out.println(".........................................................");
-		System.out.println(" PACIENTE SENHA: " + senha);
+		System.out.println(Cores.TEXT_YELLOW + " PACIENTE SENHA: " + senha + Cores.TEXT_RESET);
 		System.out.println("              NOME: " + this.nome + "                    ");
 		System.out.println("              CPF:" + this.cpf + "                       ");
 		System.out.println("              IDADE:" +this.idade + "                 ");
