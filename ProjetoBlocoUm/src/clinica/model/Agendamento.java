@@ -3,10 +3,10 @@ package clinica.model;
 import clinica.util.Cores;
 import java.time.LocalDate;
 
-public class Agendamento {
+public class Agendamento extends Especialidade{
 	
-	public Agendamento(int senha, String nome, String cpf, int idade, int tipo, float taxaConsulta) {
-		super();
+	public Agendamento(int senha, String nome, String cpf, int idade, int tipo, float taxaConsulta, String especialidade) {
+		super(especialidade, taxaConsulta);
 		this.senha = senha;
 		this.nome = nome;
 		this.cpf = cpf;

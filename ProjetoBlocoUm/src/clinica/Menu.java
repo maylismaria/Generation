@@ -20,7 +20,7 @@ public abstract class Menu {
 		Scanner sc = new Scanner (System.in);
 		
 		int opcao = 0, idade = 0, tipo = 0, lista =0;
-		String nome, cpf;
+		String nome, cpf, especialidade = null;
 		float taxaConsulta;
 		int senha = 1;
 
@@ -94,11 +94,11 @@ public abstract class Menu {
 	   		
 	   		switch (tipo) {
 	   		case 1 : {
-	   			paciente.agendamento(new Agendamento(senha++, nome,cpf,idade,tipo,taxaConsulta=0));
+	   			paciente.agendamento(new Agendamento(senha++, nome,cpf,idade,tipo,taxaConsulta=0,especialidade));
 	   			break;
 	   		}	
 	   		 case 2: {
-		   			paciente.agendamento(new Agendamento(senha++,nome,cpf,idade,tipo,taxaConsulta=0));
+		   			paciente.agendamento(new Agendamento(senha++,nome,cpf,idade,tipo,taxaConsulta=0, especialidade));
 		   			break;
 	   		}
 	   		 default: 
