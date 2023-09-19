@@ -1,5 +1,7 @@
 package abstracao_interface_heranca_polimorfismo;
 
+import java.util.Optional;
+
 public class Funcionario extends Pessoa implements Gerente, Vendedor {
 
 	
@@ -47,6 +49,8 @@ public class Funcionario extends Pessoa implements Gerente, Vendedor {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
+
+	
 
 	
 	
