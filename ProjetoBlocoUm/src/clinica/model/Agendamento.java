@@ -12,7 +12,6 @@ public class Agendamento extends Especialidade{
 		this.cpf = cpf;
 		this.idade = idade;
 		this.tipo = tipo;
-		this.taxaConsulta = taxaConsulta;
 		
 	}
 	private int senha;
@@ -20,7 +19,6 @@ public class Agendamento extends Especialidade{
 	private String cpf;
 	private int idade;
 	private int tipo;
-	public float taxaConsulta;
 		
 	
 	public int getNumero() {
@@ -54,12 +52,7 @@ public class Agendamento extends Especialidade{
 	public void setTipo(int tipo) {
 		this.tipo = tipo;
 	}
-	public float getTaxaConsulta() {
-		return taxaConsulta;
-	}
-	public void setTaxaConsulta(float taxaConsulta) {
-		this.taxaConsulta = taxaConsulta;
-	}
+	
 	
 public void visualizar() {
 	

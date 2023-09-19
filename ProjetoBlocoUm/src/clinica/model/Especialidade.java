@@ -8,7 +8,7 @@ import clinica.util.Cores;
 
 public class Especialidade {
 
-	private float taxaConsulta;
+	protected float taxaConsulta;
 	private String especialidade;
 
 	 
