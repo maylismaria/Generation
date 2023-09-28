@@ -1,5 +1,4 @@
 create database db_generation_game_online;
-
 use db_generation_game_online;
 
 CREATE TABLE tb_classes(
@@ -33,7 +32,7 @@ INSERT INTO tb_personagens (nomePersonagem,poderAtaque,poderDefesa,pontosExperie
  ("Caelan", 1000, 500, 800, 4),
  ("Ambrose", 3000, 2500, 1500,5),
  ("Caelia", 2400, 1500, 2000, 5);
-
+ 
 ALTER TABLE tb_personagens ADD CONSTRAINT fk_personagens_classes
 FOREIGN KEY (classe_id) REFERENCES tb_classes(id);
 
